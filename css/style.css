@@ -23,7 +23,23 @@ nav {
 }
 
 .welcome {
-    background-color: red;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Kunstler Script;
+    color: gold;
+}
+
+.welcomeLogo-container {
+    width: 500px;
+}
+
+.welcome h1 {
+    margin: 1rem;
+    font-size: 90px;
 }
 
 .about {
@@ -37,4 +53,10 @@ nav {
 footer {
     background-color: violet;
     color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
