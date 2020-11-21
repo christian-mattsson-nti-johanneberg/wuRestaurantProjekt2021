@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+nav {
+    color: black;
+}
+
+.gridWrapper {
+    display: grid;
+    width: 100vw;
+    max-width: 100%;
+
+    grid-template-rows: 100vh;
+
+}
+
+.welcome {
+    background-color: red;
+}
+
+.about {
+    background-color: black;
+}
+
+.contact {
+    background-color: blue;
+}
+
+footer {
+    background-color: violet;
+    color: white;
+}
