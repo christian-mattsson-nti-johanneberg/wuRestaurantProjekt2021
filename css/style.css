@@ -118,6 +118,10 @@ nav {
     height: 100vh;
 }
 
+#book article {
+    text-align: center;
+}
+
 footer {
     background-color: #000;
     color: white;
