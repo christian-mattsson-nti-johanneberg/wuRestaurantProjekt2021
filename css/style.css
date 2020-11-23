@@ -23,12 +23,11 @@ nav {
     grid-template-rows: 100vh;
 }
 
-.welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
+/*
+ * Landing Page
+ */
+#welcome {
     background: url("../img/WineOnTable.jpg");
     background-position: center;
     background-size: cover;
@@ -36,29 +35,8 @@ nav {
     color: white;
 }
 
-.welcome::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.welcome .openingHours-container {
-    z-index: 1;
-    text-align: center;
-    font-size: 19px;
-}
-
-.openingHours-container span {
-    color: #aaa;
-}
-
 .welcomeLogo-container {
     width: 500px;
-    z-index: 1;
 }
 
 .arrow-container {
@@ -68,9 +46,12 @@ nav {
     transform: translate(-50%, -50%);
 
     width: 50px;
-
-    z-index: 1;
 }
+
+
+/*
+ * About Section
+ */ 
 
 #about .imgContainer {
     display: flex;
@@ -79,26 +60,14 @@ nav {
     height: 450px;
 }
 
-#about article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #about article .textContainer {
     width: 550px;
 }
 
-#about article .textContainer h1 {
-    font-size: 45px;
-    margin: 0;
-}
 
-#about article .textContainer p {
-    font-size: 1.1rem;
-    margin: 10px 0 0 0;
-}
+/*
+ * Info Section
+ */ 
 
 #info .imgContainer {
     display: flex;
@@ -107,34 +76,39 @@ nav {
     height: 450px;
 }
 
-#info article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #info article .textContainer {
     width: 450px;
 }
 
-#info article .textContainer h1 {
-    font-size: 45px;
-    margin: 0;
-}
 
-#info article .textContainer p {
-    font-size: 1.1rem;
-    margin: 10px 0 0 0;
-}
+/*
+ * Opening Hours Section
+ */
 
-.menu-section {
+ #openingTimes .times-container {
+    width: 100%;
+
     display: grid;
-
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
 }
 
-.contact {
-    background: url("../img/OutsideRestaurant.jpg");
+#openingTimes h1 {
+    margin-bottom: 1rem;
+}
+
+#openingTimes span {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+
+/*
+ *  Book Section
+ */
+
+#book {
+    background: url("../img/RestaurantTables.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -142,16 +116,6 @@ nav {
     position: relative;
 
     height: 100vh;
-}
-
-.contact::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -174,6 +138,7 @@ img {
 .section-red {
     background-color: #aa3636;
     color: white;
+    text-shadow: 1px 1px 3px #000;
 }
 
 .section-green {
@@ -185,4 +150,35 @@ img {
 .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay-tint::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-tint > *{
+z-index: 1;
+}
+
+.textContainer h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.textContainer p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.5rem 0;
 }
