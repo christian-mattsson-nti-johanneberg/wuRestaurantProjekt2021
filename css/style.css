@@ -60,7 +60,7 @@ nav {
     height: 450px;
 }
 
-#about article .textContainer {
+#about .textContainer {
     width: 550px;
 }
 
@@ -76,7 +76,7 @@ nav {
     height: 450px;
 }
 
-#info article .textContainer {
+#info .textContainer {
     width: 450px;
 }
 
@@ -173,8 +173,8 @@ img {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.overlay-tint > *{
-z-index: 1;
+.overlay-tint *{
+    z-index: 1;
 }
 
 .textContainer h1 {
