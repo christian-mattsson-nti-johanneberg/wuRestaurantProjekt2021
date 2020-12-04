@@ -142,15 +142,37 @@ nav {
  */
 
 #reviews-section {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #reviews-section .reviewsBackground {
-    height: 200px;
+    position: relative;
+    background-image: url("/img/ReviewPic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 10rem;
 }
 
-.reviews {
+#adStars h1 {
+    font-size: 3rem;
+    margin: 0 0 1.25rem 0;
+}
+
+#adStars .stars {
+    font-size: 2.5rem;
+}
+
+.stars .checked {
+    color: orange;
+}
+
+#reviews {
     padding: 0 10% 0 10%;
+
+    background-color: rgb(245, 245, 245);
 
     flex-direction: row !important;
     justify-content: space-around !important;
@@ -159,20 +181,9 @@ nav {
     text-align: center;
 }
 
-.reviews .profilePic {
-    width: 100px;
-    height: 100px;
-}
+.review {
+    background-color: white;
 
-.reviews .text-container {
-    width: 250px;
-}
-
-.reviews img {
-    border-radius: 50%;
-}
-
-.reviews article {
     margin-top: 2rem;
     margin: 2rem;
     padding: 2rem;
@@ -180,8 +191,34 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
 }
 
-.reviews article p {
+.review .profilePic-container {
+    position: relative;
+}
+
+.review .profilePic {
+    width: 100px;
+    height: 100px;
+}
+
+.review .profilePic img {
+    border-radius: 50%;
+}
+
+.review .stars {
+    margin-bottom: 1rem;
+}
+
+.review .text-container {
+    width: 250px;
+}
+
+.review .text-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.review .text-container p {
     margin-top: 0;
+    text-align: left;
 }
 
 
