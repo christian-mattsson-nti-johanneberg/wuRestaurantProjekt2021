@@ -10,14 +10,20 @@
         <script src="https://kit.fontawesome.com/558fbe7dee.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- 
-        <nav>
-            <img src="img/Logo_Small.png" alt="Sapori Veri (Logo)">
+        
+        <nav id="navbar">
+            <ul class="nav-items">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="img-container" id="navLogo"><img src="img/LogoMinimalistic.svg" alt="Sapori Veri (Logo)"></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        -->
+
         <div class="gridWrapper">
             <main class="center-items overlay-tint" id="welcome">
-                <header class="welcomeLogo-container"><img src="img/LogoMinimalistic_White.svg" alt="Sapori Veri (Logo)"></>
+                <header class="welcomeLogo-container" id="Logo"><img src="img/LogoMinimalistic_White.svg" alt="Sapori Veri (Logo)"></>
         
                 <div class="arrow-container">
                     <a href="#about"><img src="img/down-arrow.svg" alt="Arrow"></a>
@@ -25,19 +31,19 @@
             </main>
             <section class="section-green section-grid" id="about">
                 <article class="center-items">
-                    <header class="textContainer">
+                    <header class="section-text-container">
                         <h1>True Tastes Since 1927!</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nihil sit perspiciatis, unde consequuntur quasi suscipit quod vel vitae voluptate voluptatem repellat quas alias. Dolorem dolore eum sit expedita iusto ducimus at reprehenderit incidunt, corrupti, nesciunt odio aut laudantium. Id et corporis itaque doloribus eveniet doloremque veniam voluptas voluptate sint officia odio pariatur perferendis, consequuntur illo aspernatur ut, fuga vitae.</p>
                     </header>
                 </article>
 
-                <div class="imgContainer"><img src="img/michael-browning-MtqG1lWcUw0-unsplash.jpg" alt="Restaurant Kitchen"></div>
+                <div class="imgContainer"><img src="img/kitchen.jpg" alt="Restaurant Kitchen"></div>
             </section>
             <section class="section-white section-grid" id="info">
                 <div class="imgContainer"><img src="img/max-delsid-IOz4KESUY1E-unsplash.jpg" alt="Chef Chopping Tomatoes"></div>
 
                 <article class="center-items">
-                    <header class="textContainer">
+                    <header class="section-text-container">
                         <h1>Made With:
                             <span href="" class="typewrite" data-period="2000" data-type='[ "Love", "Care", "Passion" ]'>
                                 <span class="wrap"></span>
@@ -49,7 +55,7 @@
             </section>
             <section class="section-red section-grid" id="openingTimes">
                 <article class="center-items">
-                    <header class="textContainer">
+                    <header class="section-text-container">
                         <h1>Opening Times</h1>
                         <div class="times-container">
                             <p>Monday: </p><span>08.00 - 23.00</span>
@@ -88,7 +94,7 @@
                     <article class="center-items review">
                         <div class="profilePic-container">
                             
-                            <div class="profilePic"><img src="img/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt=""></div>
+                            <div class="profilePic"><img src="img/reviewPic1.jpg" alt=""></div>
                         </div>
                         <div class="text-container">
                             <h1>Giovanni Jorno</h1>
@@ -103,7 +109,7 @@
                         </div>                
                     </article>
                     <article class="center-items review">
-                        <div class="profilePic"><img src="img/juan-ramos-EWN0rrwbBIQ-unsplash.jpg" alt=""></div>
+                        <div class="profilePic"><img src="img/reviewPic3.jpg" alt=""></div>
                         <div class="text-container">
                             <h1>Lisa Theodora</h1>
                             <div class="stars">
@@ -117,7 +123,7 @@
                         </div>                
                     </article>
                     <article class="center-items review">
-                        <div class="profilePic"><img src="img/sayo-garcia-NkOGfv7d5rY-unsplash.jpg" alt=""></div>
+                        <div class="profilePic"><img src="img/reviewPic2.jpg" alt=""></div>
                         <div class="text-container">
                             <h1>Maria Alberta</h1>
                             <div class="stars">
@@ -131,6 +137,10 @@
                         </div>
                     </article>
                 </section>
+            </section>
+
+            <section id="contact">
+
             </section>
             <footer>
                 <div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

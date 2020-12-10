@@ -54,3 +54,18 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
     document.body.appendChild(css);
 };
+
+
+document.onscroll = function() {
+
+    var logo = document.getElementById("Logo");
+    var navLogo = document.getElementById("navLogo");
+
+    if(window.pageYOffset > logo.offsetTop) {
+        navLogo.classList.add("active");
+    }
+    else {
+        navLogo.classList.remove("active");
+    }
+
+}
