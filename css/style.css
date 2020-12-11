@@ -48,7 +48,7 @@ nav .nav-items {
     text-align: center;
 }
 
-nav .nav-items .active:after {
+nav .nav-items a .active:after {
     content: ".";
     position: absolute;
     bottom: -5px;
@@ -99,7 +99,7 @@ nav #navLogo {
 nav #navLogo.active {
     width: 25%;
     padding: 3.5rem;
-    position: static;
+    
 }
 
 .gridWrapper {
