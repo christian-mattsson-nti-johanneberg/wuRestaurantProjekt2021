@@ -124,8 +124,10 @@ nav #navLogo.visible {
 }
 
 footer {
-    background-color: #000;
+    background-color: #111;
     color: white;
+    text-align: center;
+    padding: 2rem;
 }
 
 img {
@@ -153,7 +155,7 @@ img {
 }
 
 .section-black {
-    background-color: #111;
+    background-color: #222;
     color: white;
 }
 
