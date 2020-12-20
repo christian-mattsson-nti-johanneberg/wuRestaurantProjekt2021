@@ -306,11 +306,9 @@ img {
 
 /* Opening Hours Section */
 
- #openingTimes .times-container {
+#openingTimes .times-container {
     width: 100%;
 
-    display: grid;
-    grid-template-columns: 50% 50%;
     align-items: center;
     text-align: center;
 }
@@ -434,6 +432,12 @@ img {
     text-align: left;
 }
 
+/* Contact Section */
+
+#contact header {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
 /*
  * Menu Page
