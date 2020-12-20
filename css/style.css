@@ -439,6 +439,10 @@ img {
     margin-bottom: 1rem;
 }
 
+#contact address {
+    font-size: 1.15rem;
+}
+
 /*
  * Menu Page
  */
