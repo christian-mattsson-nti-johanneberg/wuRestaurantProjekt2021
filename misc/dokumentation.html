@@ -39,6 +39,13 @@
 
     <h3>2.1 Handskiss</h3>
     <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
+    
+    <img src="/misc/home.png" alt="home skiss">
+    <img src="/misc/meny.png" alt="meny skiss">
+    <img src="/misc/booking.png" alt="booking skiss">
+
+    <strong>Jag glömde skriva ut vilka boxelement som ska användas så jag skriver det här istället. Tanken är att jag ska ha ungefär samma på alla sidorna oavsett.</strong>
+    <p>Så tanken är att alla liksom rows i ett grid samt alla fyrkanter som är som en egen sektion ska vara i en section. Inuti sections eller bara som container till text så är tanken att använda articles. För containers till bilder så använder jag mig bara av divar. </p>
 
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
@@ -151,8 +158,8 @@
     <!-- Fyll på med dokumentation här. -->
         <em>Vad har jag gjort?: 
             <ul>
-                <li>På lektionen: Jag lyckades göra klart bokningssidan <p></p></li>
-                <li>Hemma: <p>. Jag gjorde klart menysidan utefter min skiss. Eftersom alla delarna i menyn ändå skulle se likadana ut så valde jag att stylea alla articles och headers likadant med hjälp av element selectorer i css:en. </p></li>
+                <li>På lektionen: <p>Jag lyckades göra klart bokningssidan. Jag tänkte göra den lite mer avancerad än den hade behövt vara först (genom att göra en databas och kolla vilka bord som är lediga osv.), men jag kände att jag nöjde mig med att bara ha konceptet för bokningssystemet klart.</p></li>
+                <li>Hemma: <p>Jag gjorde klart menysidan utefter min skiss. Eftersom alla delarna i menyn ändå skulle se likadana ut så valde jag att stylea alla articles och headers likadant med hjälp av element selectorer i css:en. </p></li>
             </ul>
         </em>
 
@@ -160,25 +167,27 @@
 
         <em>Vad ska jag tänka på till nästa gång?: 
             <ul>
-                <li><p></p></li>
+                <li><p>För att begränsa vilka värden som går att välja i en datumtabell så kräver input av typ "text" attributet "min" att man skriver datumet exakt på formen: yyyy-mm-dd.</p></li>
+                <li>Man kan uppdatera visandet av värdet av en input av typ "range" genom attributet "oninput".</li>
             </ul> 
         </em>
     <h3>Lektion vecka 50</h3>
     <!-- Fyll på med dokumentation här. -->
         <em>Vad har jag gjort?: 
             <ul>
-                <li>På lektionen: För navbaren så använde jag mig av flexbox för att positionera elementen. Jag valde att ha 4 länkar i naven varav 3 st. länkar till html dokument och den 4e länkar till en section längre ner på första sidan. Efter att ha satt loggan i mitten av navbaren så märkte jag att det såg lite konstigt ut att kunna se loggan på två ställen samtidigt. Jag gjorde därför en animation med hjälp av css och javascript så att loggan i navbaren gömde sig fram tills att man scrollat förbi loggan som är på mitten av sidan. Animationen gick i princip ut på att jag ändrade width mellan 0% och 100%. Jag märkte också att loggan i navbaren inte hamnade i mitten helt. Det berodde på att de andra orden i navbaren inte hade liknande längd. Jag löste problemet då genom att bara korta ner "Book a table" till "Booking".</li>
-                <li>Hemma: <p></p></li>
+                <li>På lektionen: <p>För navbaren så använde jag mig av flexbox för att positionera elementen. Jag valde att ha 4 länkar i naven varav 3 st. länkar till html dokument och den 4e länkar till en section längre ner på första sidan. Efter att ha satt loggan i mitten av navbaren så märkte jag att det såg lite konstigt ut att kunna se loggan på två ställen samtidigt. Jag gjorde därför en animation med hjälp av css och javascript så att loggan i navbaren gömde sig fram tills att man scrollat förbi loggan som är på mitten av sidan. Animationen gick i princip ut på att jag ändrade width mellan 0% och 100%. Jag märkte också att loggan i navbaren inte hamnade i mitten helt. Det berodde på att de andra orden i navbaren inte hade liknande längd. Jag löste problemet då genom att bara korta ner "Book a table" till "Booking". Jag hade i princip samma process för att göra footern.</p></li>
+                <li>Hemma: <p>Jag hade annat plugg och höll på med renovering hemma så jag gjorde inte så mycket. Jag kände att jag låg bra till i planeringen dessutom så kände inte att jag behövde.</p></li>
             </ul>
         </em>
 
-        <p><em>Vad gick bra/mindre bra?: </em></p>
+        <p><em>Vad gick bra/mindre bra?: Tycker att allt gick smidigt och bra :)</em></p>
 
-        <em>Vad ska jag tänka på till nästa gång?: </em>
-        <ul>
-            <li><p></p></li>
-        </ul> 
-    
+        <em>Vad ska jag tänka på till nästa gång?:
+            <ul>
+                <li><p>Det går inte riktigt att animera en transtion mellan "displa: none" och "display: block" så man kan istället ändra with från 0% till 100%.</p></li>
+            </ul> 
+        </em>
+
     <h3>Lektion vecka 51</h3>
     <!-- Fyll på med dokumentation här. -->
         <em>Vad har jag gjort?: 
