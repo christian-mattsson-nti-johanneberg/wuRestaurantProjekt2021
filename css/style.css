@@ -1,3 +1,25 @@
+
+/* 
+
+*** KOMMENTAR-SYNTAX ***
+
+Kommentarer som ser ut såhär:   / *
+                                  * XXX
+                                  * /
+
+Betyder att följande css stylear an ny html sida.
+
+Kommentarer som ser ut såhär: / * XXX * /
+
+Betyder att följande css stylear en ny sektion/element på samma sida som
+senaste av den förra ovanstående kommentaren.
+
+*/
+
+
+
+/* Base Structure */
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +29,6 @@ body, html {
     padding: 0;
     margin: 0;
     color: white;
-    /* text-shadow: 1px 1px 10px #000; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -102,6 +123,121 @@ nav #navLogo.active {
     
 }
 
+footer {
+    background-color: #000;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.section-white {
+    background-color: white;
+    color: black;
+}
+
+.section-red {
+    background-color: #aa3636;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.section-green {
+    background-color: #449448;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.section-black {
+    background-color: #111;
+    color: white;
+}
+
+.section-grid-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.section-grid-33 {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    justify-content: space-between;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay-tint::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-tint * {
+    z-index: 1;
+}
+
+.section-text-container h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.section-text-container p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.btn-fill {
+    padding: 1.25rem;
+
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 150ms linear;
+}
+
+.btn-fill:hover {
+    background-color: #862a2a;
+}
+
+.btn {
+    padding: 1rem;
+
+    border: solid white 2px;
+    border-radius: 5px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background 250ms linear;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blacK;
+}
+
+
+/*
+ * Home Page
+ */
+
 .gridWrapper {
     width: 100vw;
     max-width: 100%;
@@ -111,9 +247,8 @@ nav #navLogo.active {
 }
 
 
-/*
- * Landing Page
- */
+/* Landing page section */
+
 #welcome {
     background: url("../img/WineOnTable.jpg");
     background-position: center;
@@ -136,9 +271,7 @@ nav #navLogo.active {
 }
 
 
-/*
- * About Section
- */ 
+/* About Section */ 
 
 #about .imgContainer {
     display: flex;
@@ -152,9 +285,7 @@ nav #navLogo.active {
 }
 
 
-/*
- * Info Section
- */ 
+/* Info Section */ 
 
 #info .imgContainer {
     display: flex;
@@ -168,9 +299,7 @@ nav #navLogo.active {
 }
 
 
-/*
- * Opening Hours Section
- */
+/* Opening Hours Section */
 
  #openingTimes .times-container {
     width: 100%;
@@ -190,9 +319,7 @@ nav #navLogo.active {
 }
 
 
-/*
- *  Book Section
- */
+/* Book Section */
 
 #book {
     background: url("../img/RestaurantTables.jpg");
@@ -220,10 +347,8 @@ nav #navLogo.active {
 }
 
 
-/*
- * Reviews Section
- */
-
+/* Reviews Section */
+ 
 #reviews-section {
     display: flex;
     flex-direction: column;
@@ -305,108 +430,51 @@ nav #navLogo.active {
 }
 
 
-.btn-fill {
-    padding: 1.25rem;
+/*
+ * Menu Page
+ */
 
-    background-color: white;
-    border-radius: 5px;
-    color: black;
+.grid-wrapper-menu {
 
-    font-weight: 700;
-    text-decoration: none;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
 
-    transition: all 150ms linear;
-}
-
-.btn-fill:hover {
-    background-color: #862a2a;
-}
-
-.btn {
-    padding: 1rem;
-
-    border: solid white 2px;
-    border-radius: 5px;
-
-    font-weight: 700;
-    text-decoration: none;
-
-    transition: background 250ms linear;
-}
-
-.btn:hover {
-    background-color: white;
-    color: blacK;
-}
-
-
-
-footer {
-    background-color: #000;
-    color: white;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
-}
-
-.section-white {
-    background-color: white;
-    color: black;
-}
-
-.section-red {
-    background-color: #aa3636;
-    color: white;
-    text-shadow: 1px 1px 3px #000;
-}
-
-.section-green {
-    background-color: #449448;
-    color: white;
-    text-shadow: 1px 1px 3px #000;
-}
-
-.section-black {
-    background-color: #111;
-    color: white;
-}
-
-.section-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
 }
 
-.center-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.grid-wrapper-menu main {
+    background-image: url("/img/menu.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.overlay-tint::after {
-    content: "";
+.grid-wrapper-menu section article {
+    position: relative;
+}
+
+.grid-wrapper-menu section header {
+    padding: 7.5rem;
+    font-size: 2rem;
+}
+
+.grid-wrapper-menu section article h1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.overlay-tint *{
-    z-index: 1;
-}
-
-.section-text-container h1 {
-    font-size: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #000;
 }
 
-.section-text-container p {
-    font-size: 1.1rem;
-    margin: 0.5rem 0 0.5rem 0;
+
+.main-course {
+    
+}
+
+.desserts {
+    
 }

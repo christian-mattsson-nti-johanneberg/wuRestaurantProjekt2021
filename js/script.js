@@ -49,7 +49,7 @@ window.onload = function() {
         
     }
 
-    // INJECT CSS
+    
     var css = document.createElement("style");
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
     document.body.appendChild(css);
