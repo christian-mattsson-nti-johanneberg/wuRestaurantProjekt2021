@@ -62,10 +62,23 @@ document.onscroll = function() {
     var navLogo = document.getElementById("navLogo");
 
     if(window.pageYOffset > logo.offsetTop) {
-        navLogo.classList.add("active");
+        navLogo.classList.add("visible");
     }
     else {
-        navLogo.classList.remove("active");
+        navLogo.classList.remove("visible");
     }
 
+}
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth() + 1;
+var yyyy = today.getFullYear();
+
+today = yyyy + '-' + mm + '-' + dd;
+document.getElementById("date").min = today;
+
+
+function updateGuestCount(val) {
+    document.getElementById('guest-counter').textContent=val; 
 }

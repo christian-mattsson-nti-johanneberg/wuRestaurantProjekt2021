@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/558fbe7dee.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <nav id="navbar">
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="img-container visible" id="navLogo"><img src="img/LogoMinimalistic.svg" alt="Sapori Veri (Logo)"></li>
+                <li><a class="active" href="booking.html">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid-wrapper-booking">
+
+            <main class="center-items overlay-tint">
+                <article class="section-white booking-section center-items">
+                    <header class="booking-header"><h1>Book Your Table</h1></header>
+                    <form id="booking-form" class="center-items" action="" autocomplete="on">
+
+                        <section class="center-items">
+                            <article>
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname" name="fname" placeholder="Enter your firstname" required autofocus>
+                            </article>
+                            <article>
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname" name="lname" placeholder="Enter your lastname" required>
+                            </article>
+                        </section>
+
+                        <section class="center-items">
+                            <article>
+                                <label for="date-time">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </article>
+                            <article>
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" min="08:00" max="01:00" required>
+                            </article>
+                        </section>
+
+                        <section>
+                            <article>
+                                <label for="guest-count">Guest Count: <span id="guest-counter">2</span></label>
+                                <input type="range" id="guest-count" name="guest-count" min="1" max="12" value="2" oninput="updateGuestCount(this.value);" required>
+                            </article>
+                        </section>
+                        
+                        <input class="btn-outline-black" type="submit" value="Reserve Table!">
+                    </form>
+                </article>
+            </main>
+
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
